@@ -4,5 +4,6 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage request, Tr
 {
     object requestBody = await request.Content.ReadAsAsync<object>();
     Console.print("hello world");
+    // pushed from desktop
     return request.CreateResponse(HttpStatusCode.OK, requestBody);
 }
